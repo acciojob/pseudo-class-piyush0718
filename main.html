@@ -5,11 +5,27 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
-
+	<style>
+		#container{
+			margin: 20px;
+		}
+		#container::before{
+			content: "Before Element ";
+		}
+		#container::after{
+			content: " After Element";
+		}
+		#container::before, #container::after{
+			color: #f00;
+			font-size: 20px;
+		}
+	</style>
+ 
 <body>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
+	<div id="container">This is the main container element</div>
 
 </body>
 
